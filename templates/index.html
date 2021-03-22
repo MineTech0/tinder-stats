@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder stats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
+<div class="container mt-4">
+    <h1>Tinder stats</h1>
+    <p>Lataa data.json tiedosto</p>
     <form action="/" method="post" enctype="multipart/form-data">
-        <input name="file" type="file">
+        <input class="mb-2" name="file" type="file">
         <button type="submit">Lähetä</button>
     </form>
+</div>
 </body>
 </html>
