@@ -136,15 +136,15 @@ def stats(data):
     # table.append(["Boosts purchased", num_boosts])
     table.append(["Months of Tinder Gold purchased", str(months_tinder_gold) + ' months'])
 
-    f = open('file.csv', 'w')
-    for item in table:
-        for i in range(len(item)):
-            if i == 0:
-                f.write(str(item[i]))
-            else:
-                f.write(',' + str(item[i]))
-        f.write('\n')
-    f.close()
+    # f = open('file.csv', 'w')
+    # for item in table:
+    #     for i in range(len(item)):
+    #         if i == 0:
+    #             f.write(str(item[i]))
+    #         else:
+    #             f.write(',' + str(item[i]))
+    #     f.write('\n')
+    # f.close()
     #print(tabulate(table))
 
     return table
