@@ -10,12 +10,6 @@ from tabulate import tabulate
 
 
 def stats(data):
-    # Get data from file
-    # f = open('data.json', 'r', encoding="utf8")
-    # data = json.load(f)
-    # f.close()
-
-    # Used to print values
     table = []
 
     # Get swiping statistics
@@ -94,9 +88,6 @@ def stats(data):
     total_days = int(str(delta.days))
     deactivated_days = total_days - active_days
 
-    # Purchases
-    # num_boosts = int(data["Purchases"]["boost_usage"]["purchased"])
-
     months_tinder_gold = 0
     for purchase in data["Purchases"]["subscription"]:
         months_tinder_gold += int(purchase["terms"])
@@ -133,20 +124,7 @@ def stats(data):
     table.append(["Total days on Tinder", str(total_days) + ' days'])
     table.append(["Days profile active", str(active_days) + ' days'])
     table.append(["Days profile deactivated", str(deactivated_days) + ' days'])
-    # table.append(["Boosts purchased", num_boosts])
     table.append(["Months of Tinder Gold purchased", str(months_tinder_gold) + ' months'])
-
-    # f = open('file.csv', 'w')
-    # for item in table:
-    #     for i in range(len(item)):
-    #         if i == 0:
-    #             f.write(str(item[i]))
-    #         else:
-    #             f.write(',' + str(item[i]))
-    #     f.write('\n')
-    # f.close()
-    #print(tabulate(table))
-
     return table
 
 if __name__ == "__main__":

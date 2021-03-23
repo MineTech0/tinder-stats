@@ -12,11 +12,6 @@ def upload():
         file = request.files.get('file', None)
         file.seek(0)
         result = stats(json.loads(file.read()))
-        response = app.response_class(
-            response=json.dumps(result),
-            status=200,
-            mimetype='application/text'
-        )
         return render_template("table.html", data=result)
     else:
         return render_template("index.html")

@@ -12,8 +12,12 @@
     <h1>Tinder stats</h1>
     <p>Lataa data.json tiedosto</p>
     <form action="/" method="post" enctype="multipart/form-data">
-        <input class="mb-2" name="file" type="file">
-        <button type="submit">Lähetä</button>
+        <div class="input-group">
+            <input name="file" type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                   aria-label="Lähetä">
+            <button class="btn btn-outline-secondary" type="submit" id="inputGroupFileAddon04">Lähetä</button>
+        </div>
+
     </form>
 </div>
 </body>
