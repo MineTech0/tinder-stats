@@ -1,5 +1,5 @@
 # tinder-stats
 
-https://tinder-stats.heroku.com
+https://tinder-stats.herokuapp.com/
 
 Simple website to analyze your tinder data.
